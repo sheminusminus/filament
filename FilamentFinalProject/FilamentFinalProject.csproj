@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB13E56D-2199-45B7-AAA4-26C9C63CB960}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FilamentFinalProject</RootNamespace>
+    <AssemblyName>FilamentFinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4" />
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FourChan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FourChan.Designer.cs">
+      <DependentUpon>FourChan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Challenge2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Challenge2.Designer.cs">
+      <DependentUpon>Challenge2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChallengeOne.Designer.cs">
+      <DependentUpon>ChallengeOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character.cs" />
+    <Compile Include="Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EscapeSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscapeSuccess.Designer.cs">
+      <DependentUpon>EscapeSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FbMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FbMap.Designer.cs">
+      <DependentUpon>FbMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FbPrequel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FbPrequel.Designer.cs">
+      <DependentUpon>FbPrequel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeCharacter.Designer.cs">
+      <DependentUpon>MakeCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Narrator2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Narrator2.Designer.cs">
+      <DependentUpon>Narrator2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Narrator3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Narrator3.Designer.cs">
+      <DependentUpon>Narrator3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Narrator4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Narrator4.Designer.cs">
+      <DependentUpon>Narrator4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkPath.cs" />
+    <Compile Include="PathsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathsInfo.Designer.cs">
+      <DependentUpon>PathsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickItem.Designer.cs">
+      <DependentUpon>PickItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reddit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reddit.Designer.cs">
+      <DependentUpon>Reddit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NarratorIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NarratorIntro.Designer.cs">
+      <DependentUpon>NarratorIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGame.Designer.cs">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thing.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourChan.resx">
+      <DependentUpon>FourChan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Challenge2.resx">
+      <DependentUpon>Challenge2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChallengeOne.resx">
+      <DependentUpon>ChallengeOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscapeSuccess.resx">
+      <DependentUpon>EscapeSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FbMap.resx">
+      <DependentUpon>FbMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FbPrequel.resx">
+      <DependentUpon>FbPrequel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeCharacter.resx">
+      <DependentUpon>MakeCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Narrator2.resx">
+      <DependentUpon>Narrator2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Narrator3.resx">
+      <DependentUpon>Narrator3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Narrator4.resx">
+      <DependentUpon>Narrator4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NarratorIntro.resx">
+      <DependentUpon>NarratorIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathsInfo.resx">
+      <DependentUpon>PathsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickItem.resx">
+      <DependentUpon>PickItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reddit.resx">
+      <DependentUpon>Reddit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGame.resx">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\FbMap.datasource" />
+    <None Include="Properties\DataSources\FilamentFinalProject.Properties.Resources.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilamentRed1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malesymbol1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalesymbol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackhair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blondehair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownhair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redhair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackhairM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blondehairM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownhairM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redhairM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caucasian1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afamer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hairtext.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weartext.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blshirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wearblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wearorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wearpurp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluedress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orangedress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purpdress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blshirt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orshirt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purshirt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tinyblack1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tinyblonde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tinybrown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tinyred.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbMap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orshirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purshirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\zynga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fbhut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fbexit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redMap3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qmark.png" />
+    <None Include="Resources\qr.png" />
+    <None Include="Resources\net.png" />
+    <None Include="Resources\lap.png" />
+    <None Include="Resources\guy.png" />
+    <None Include="Resources\tabletop2.png" />
+    <None Include="Resources\tabletop.png" />
+    <None Include="bin\Debug\redMap5.png" />
+    <None Include="bin\Debug\goldchains.png" />
+    <None Include="bin\Debug\goldpile.png" />
+    <None Include="bin\Debug\arrows.png" />
+    <None Include="bin\Debug\alien.png" />
+    <None Include="Resources\cardTable.jpg" />
+    <Content Include="Resources\fbhut.png" />
+    <None Include="Resources\reddit_alien.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
